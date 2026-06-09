@@ -28,7 +28,7 @@ async def translate(update: Update, prompt: str):
     user_text = text[1]
 
     response = client.chat.completions.create(
-        model="gpt-5",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": prompt},
             {"role": "user", "content": user_text},
