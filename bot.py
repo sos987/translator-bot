@@ -8,6 +8,9 @@ from telegram.ext import (
 
 from openai import OpenAI
 
+print("TG_TOKEN =", bool(os.getenv("TG_TOKEN")))
+print("OPENAI_API_KEY =", bool(os.getenv("OPENAI_API_KEY")))
+
 client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY")
 )
